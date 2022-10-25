@@ -54,7 +54,7 @@ while True:
         elif text2 == "こんにちは":
                 from playsound import playsound
                 playsound("voicesample2.wav")
-        elif "聞いてよ" in text2:
+        elif "聞いて" in text2:
                 rand = random.random() * 10
                 print(rand)
                 if rand < 5:
