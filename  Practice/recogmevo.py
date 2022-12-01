@@ -38,7 +38,7 @@ def sendRequest(msg_q):
   r = sr.Recognizer()
   with sr.Microphone() as source:  
       r.adjust_for_ambient_noise(source)                                                                     
-      print("あかりちゃんへの質問を喋ってね:")                                                                                   
+      print("何か話しかけてください:")                                                                                   
       audio = r.listen(source)   
 
   msg_q = ""
