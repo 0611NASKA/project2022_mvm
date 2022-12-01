@@ -20,7 +20,9 @@ def getAnswerMsg(msg_q):
   res = sendRequest(msg_q)
   print(res)
   res_json = res.json()
+
   print(res.json())
+  print(res.json['bestResponse'])
 
   return res_json["bestResponse"]["utterance"]
 if __name__ == '__main__':
